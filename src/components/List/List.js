@@ -3,13 +3,18 @@ import styles from './List.scss';
 import Hero from '../Hero/Hero.js';
 import Column from '../Column/Column.js';
 import PropTypes from 'prop-types';
-import {settings} from '../../data/dataStore';
+import { settings } from '../../data/dataStore';
 import ReactHtmlParser from 'react-html-parser'; //wymagana instalacja pakietu react-html-parser
 
 class List extends React.Component {
+  state = {
+    columns: this.props.columns || [],
+  }
+  
   static propTypes = {
     title: PropTypes.node.isRequired,
     titleColumn: PropTypes.node,
+    imageURL: PropTypes.string,
     description: PropTypes.node,
     columns: PropTypes.array,
   };
@@ -26,9 +31,9 @@ class List extends React.Component {
           {ReactHtmlParser(this.props.description)}
         </div> 
         <div className={styles.columns}>
-          <Column titleColumn={'Title one'} />
-          <Column titleColumn={'Title two'} />
-          <Column titleColumn={'Title three'} />
+          {this.state.columns.map(({key, ...columnProps}) => (
+            <Column key={key} {...columnProps} />
+          ))}
         </div>
       </section>
     )
