@@ -7,6 +7,7 @@ import {settings} from '../../data/dataStore';
 import ReactHtmlParser from 'react-html-parser'; //wymagana instalacja pakietu react-html-parser
 import Creator from '../Creator/Creator.js';
 
+
 class List extends React.Component {
   state = {
     columns: this.props.columns || [],
@@ -17,6 +18,7 @@ class List extends React.Component {
     imageURL: PropTypes.string,
     description: PropTypes.node,
     columns: PropTypes.array,
+    addColumn: PropTypes.func,
   };
 
   static defaultProps = {
