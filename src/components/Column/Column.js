@@ -18,11 +18,11 @@ class Column extends React.Component {
     icon: PropTypes.node,
     addCard: PropTypes.func,
     name: PropTypes.node,
-}
+  }
 
   static defaultProps = {
     icon: settings.defaultColumnIcon,
-}
+  }
 
   addCard(title){
     this.setState(state => (
@@ -33,9 +33,9 @@ class Column extends React.Component {
             key: state.cards.length ? state.cards[state.cards.length-1].key+1 : 0,
             title,
             icon: 'list-alt',
-            cards: []
-          }
-        ]
+            cards: [],
+          },
+        ],
       }
     ));
   }
