@@ -8,9 +8,9 @@ import Icon from '../Icon/Icon.js';
 
 class Column extends React.Component {
 
-  state = {
-    cards: this.props.cards || [],
-  }
+  // state = {
+  //   cards: this.props.cards || [],
+  // }
 
   static propTypes = {
     title: PropTypes.string,
@@ -50,8 +50,8 @@ class Column extends React.Component {
           </span>
         </h3>
         <div className={styles.cards}>
-          {cards.map(({key, ...cardsProps}) => (
-            <Card key={key} {...cardsProps} />
+          {cards.map(cardData => (
+            <Card key={cardData.id} {...cardData} />
           ))}
         </div>
         {/* <div className={styles.creator}>
