@@ -46,8 +46,8 @@ class List extends React.Component {
   render() {
     const {title, image, description, columns, addColumn} = this.props;
     return (
-      <section className={styles.component}>
-        <Container>
+      <Container>
+        <section className={styles.component}>
           <Hero titleText={title} imageURL={image}/>
           <div className={styles.description}>
             {ReactHtmlParser(description)}
@@ -60,8 +60,8 @@ class List extends React.Component {
           <div className={styles.creator}>
             <Creator text={settings.columnCreatorText} action={addColumn}/>
           </div>
-        </Container>
-      </section>
+        </section>
+      </Container>              
     );
   }
 }

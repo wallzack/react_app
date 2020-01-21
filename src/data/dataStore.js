@@ -12,6 +12,25 @@ export const settings = {
   },
   defaultListDescription: '<p>I can do all the things!!!</p>',
   defaultColumnIcon: 'list-alt',
+  navMenu: {
+    logoIcon: 'cat',
+    toHomeURL: '/',
+    toInfoURL: '/Info',
+    toFAQURL: '/FAQ',
+    homeHeader: 'Home',
+    infoHeader: 'Info',
+    FAQHeader: 'FAQ',
+  },
+  infoContent: {
+    title: 'Info',
+    image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
+    text: 'Lorem ipsum ipsum lorem. Lorem ipsum ipsum lorem. Lorem ipsum ipsum lorem.',
+  },
+  FAQContent: {
+    title: 'FAQ',
+    image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
+    text: 'Lorem ipsum ipsum lorem. Lorem ipsum ipsum lorem. Lorem ipsum ipsum lorem.',
+  },
 };
 
 export const pageContents = {

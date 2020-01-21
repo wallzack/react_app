@@ -3,9 +3,10 @@
 .component {
   width: 100%;
   display: flex;
+  // border: 2px solid red;
 
   input {
-    // flex-grow: 1;
+    // flex-grow: 5;
     background: $color-light;
     border: 1px solid lighten($color-dark, 60%);
     padding: $base-size ($base-size * 1.5);
