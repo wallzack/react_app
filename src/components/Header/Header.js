@@ -6,6 +6,7 @@ import Icon from '../Icon/Icon';
 import { settings } from '../../data/dataStore';
 import PropTypes from 'prop-types';
 import ReactHtmlParser from 'react-html-parser';
+import Search from '../Search/SearchContainer';
 
 
 class Header extends React.Component {
@@ -39,6 +40,7 @@ class Header extends React.Component {
             <Link to={toHomeURL} className={styles.logo}>
               <Icon name={logoIcon} />
             </Link>
+            <Search />
             <nav>
               <NavLink exact to={toHomeURL} activeClassName='active'>{ReactHtmlParser(homeHeader)}</NavLink>
               <NavLink exact to={toInfoURL} activeClassName='active'>{ReactHtmlParser(infoHeader)}</NavLink>
