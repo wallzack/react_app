@@ -34,7 +34,7 @@ class Header extends React.Component {
     const {logoIcon, toFAQURL, toHomeURL, toInfoURL, homeHeader, infoHeader, FAQHeader} = this.props;
     return (
       <header className={styles.component}>
-        < Container >
+        <Container>
           <div className={styles.wrapper}>
             <Link to={toHomeURL} className={styles.logo}>
               <Icon name={logoIcon} />
