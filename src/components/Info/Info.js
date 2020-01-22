@@ -6,6 +6,7 @@ import {settings} from '../../data/dataStore';
 import ReactHtmlParser from 'react-html-parser';
 
 
+
 const Info = ({titleText, imageURL, contentText}) => (
   <Container>
     <Hero titleText={titleText} imageURL={imageURL} />
