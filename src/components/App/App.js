@@ -9,8 +9,6 @@ import styles from './App.scss';
 import List from '../List/ListContainer';
 import SearchResult from '../SearchResult/SearchResultContainer';
 
-
-
 const App = () => (
   <BrowserRouter>
     <MainLayout>
