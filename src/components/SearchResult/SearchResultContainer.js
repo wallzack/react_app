@@ -1,6 +1,6 @@
 import {connect} from 'react-redux';
 import {getCardsForSearch} from '../../redux/cardsRedux.js';
-import {createActionchangeSearchString} from '../../redux/searchStringRedux';
+import {createActionChangeSearchString} from '../../redux/searchStringRedux';
 import SearchResult from './SearchResult.js';
 
 
@@ -9,7 +9,7 @@ const mapStateToProps = (state, props) => ({
 });
 
 const mapDispatchToProps = (dispatch) => ({
-  changeSearchString: newSearchString => dispatch(createActionchangeSearchString(newSearchString)),
+  changeSearchString: newSearchString => dispatch(createActionChangeSearchString(newSearchString)),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(SearchResult);
