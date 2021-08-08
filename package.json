@@ -26,7 +26,7 @@
   "license": "ISC",
   "dependencies": {
     "fsevents": "^2.1.2",
-    "http-server": "^0.12.1",
+    "http-server": "^0.13.0",
     "prop-types": "^15.7.2",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
